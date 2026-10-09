@@ -1,0 +1,219 @@
+/* ==========================================================================
+   RAVI KUMAR RAY — RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .hero-greeting,
+    .hero-designation {
+        justify-content: center;
+    }
+
+    .hero-bio {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-cta-group,
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-card-visual {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .about-content-text {
+        text-align: center;
+    }
+
+    .about-pillars {
+        text-align: left;
+    }
+
+    .project-card.featured-large {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .section-spacing {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-name {
+        font-size: 2.9rem;
+    }
+
+    .hero-designation {
+        font-size: 1.4rem;
+    }
+
+    .metrics-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .avatar-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .floating-pill {
+        display: none; /* Keep avatar clean on small screens */
+    }
+
+    /* Mobile Nav Drawer */
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(10, 14, 26, 0.96);
+        backdrop-filter: blur(25px);
+        border-left: 1px solid var(--border-subtle);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 20px;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1050;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-cta-btn {
+        display: none; /* In mobile menu or navbar */
+    }
+
+    .nav-links .mobile-cta {
+        display: inline-flex;
+        margin-top: 10px;
+    }
+
+    .about-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        padding-left: 45px;
+    }
+
+    .experience-timeline::before {
+        left: 15px;
+    }
+
+    .timeline-marker {
+        left: 6px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .timeline-period {
+        margin-top: 4px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-name {
+        font-size: 2.3rem;
+    }
+
+    .hero-designation {
+        font-size: 1.2rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .metrics-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar-wrapper {
+        width: 260px;
+        height: 260px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .copy-btn {
+        align-self: flex-end;
+    }
+
+    .contact-form-card {
+        padding: 24px 16px;
+    }
+}

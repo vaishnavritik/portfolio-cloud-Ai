@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnav Srivastava | GenAI & Machine Learning Portfolio</title>
+    <meta name="description" content="Portfolio of Vaishnav Srivastava, Cloud Engineer in Generative AI, Machine Learning, Python, and AI application development.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media_query.css">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================================
+         NAVIGATION BAR
+         ========================================================================== -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo-link">
+                <div class="logo-symbol">V</div>
+                <div class="logo-text">
+                    Vaishnav Srivastava
+                    <span class="logo-badge">GEN AI</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex" style="align-items: center; gap: 14px;">
+                <a href="#contact" class="nav-cta-btn">
+                    <span>Let's Talk</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <i class="bx bx-menu" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             HERO SECTION
+             ========================================================================== -->
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Building toward GenAI & AI/ML Engineering</span>
+                    </div>
+
+                    <div class="hero-greeting">Hello, I'm</div>
+                    <h1 class="hero-name">
+                        <span class="gradient-text">Vaishnav</span> Srivastava
+                    </h1>
+
+                    <div class="hero-designation">
+                        <span>I am a</span>
+                        <span class="typing-text" id="typingElement">GenAI & ML Engineer</span>
+                    </div>
+
+                    <p class="hero-bio">
+                        Cloud Engineer at Sopra Steria with experience supporting enterprise applications and cloud infrastructure. Currently building skills and projects in <strong>Generative AI</strong>, <strong>Machine Learning</strong>, Python, and AI application development.
+                    </p>
+
+                    <!-- Focus Areas Strip -->
+                    <div class="metrics-strip">
+                        <div class="metric-card"><div class="metric-number">Python</div><div class="metric-label">AI Development</div></div>
+                        <div class="metric-card"><div class="metric-number">GenAI</div><div class="metric-label">LLMs & Prompting</div></div>
+                        <div class="metric-card"><div class="metric-number">ML</div><div class="metric-label">Learning & Projects</div></div>
+                        <div class="metric-card"><div class="metric-number">Cloud</div><div class="metric-label">Devops</div></div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="hero-cta-group">
+                        <a href="https://drive.google.com/file/d/1SmHq4cgLCZUi9m1q7hLkB7TUDzyAL-Se/view?usp=sharing" target="_blank" class="btn-primary" id="downloadCvBtn">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#projects" class="btn-secondary">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>View Projects</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Channels -->
+                    <div class="hero-socials">
+                        <a href="https://github.com/Vaishnav129f" target="_blank" class="social-pill" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vaishnav-srivastava-4662a1218/" target="_blank" class="social-pill" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:vaishnavsrivastavamzp@gmail.com" class="social-pill" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+916393407978" class="social-pill" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Showcase -->
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow-ring"></div>
+                        <img src="./intro2.png" alt="Vaishnav Srivastava - GenAI and Machine Learning" class="avatar-img">
+                        
+                        <!-- Floating Tech Pills -->
+                        <div class="floating-pill pill-1">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>LLaMA 3 & LangGraph</span>
+                        </div>
+                        <div class="floating-pill pill-2">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                            <span>Voice AI & Gemini Live</span>
+                        </div>
+                        <div class="floating-pill pill-3">
+                            <i class="fa-solid fa-database"></i>
+                            <span>RAG & VectorDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             ABOUT & CORE AI PILLARS
+             ========================================================================== -->
+        <section class="section-spacing" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                        <span>About Me</span>
+                    </div>
+                    <h2 class="section-title">Architecting <span class="gradient-text">Next-Gen AI</span> Systems</h2>
+                    <p class="section-subtitle">Combining enterprise cloud-support experience with hands-on projects in Generative AI and Machine Learning.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card-visual">
+                        <div class="about-photo-frame">
+                            <img src="./me.png" alt="Vaishnav Srivastava">
+                            <div class="about-badge-card">
+                                <div class="badge-title">B.Tech in Computer Science & Engineering</div>
+                                <div class="badge-subtitle">Galgotias College of Engineering and Technology</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-text">
+                        <h3>Transforming Complex Challenges into Autonomous AI Solutions</h3>
+                        <p class="about-desc">
+                            I am a <strong>Cloud Engineer transitioning toward Generative AI and Machine Learning engineering</strong>. My professional experience includes production support for enterprise applications and cloud infrastructure, working with Linux/RHEL, AWS, Git, Jenkins, shell scripting, SSL/TLS, and relational databases. Alongside this foundation, I am having AI/ML skills through structured learning and projects.
+                        </p>
+                        <p class="about-desc">
+                            My long-term goal is to build reliable AI-powered applications by combining Python, machine learning fundamentals, LLM-based solutions, APIs, and cloud deployment practices. The project cards below are retained from the existing portfolio template and should be reviewed to ensure each one reflects work I can personally demonstrate.
+                        </p>
+
+                        <!-- Specialization Pillars -->
+                        <div class="about-pillars">
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-robot"></i></div>
+                                <div class="pillar-title">Generative & Agentic AI</div>
+                                <div class="pillar-desc">Multi-agent workflows with LangGraph & LangChain, conversation memory, dynamic tool calling, and autonomous decision pipelines.</div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-wave-square"></i></div>
+                                <div class="pillar-title">Real-Time Voice AI</div>
+                                <div class="pillar-desc">Sub-second ASR-LLM-TTS streaming over WebSockets, Gemini Live, Deepgram, ElevenLabs, Twilio telephony, and barge-in handling.</div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                <div class="pillar-title">Production RAG & Vector Search</div>
+                                <div class="pillar-desc">Vector embeddings, semantic retrieval with Pinecone/Chroma, domain glossary injection, and ~95% knowledge-base response accuracy.</div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-cubes"></i></div>
+                                <div class="pillar-title">Full-Stack & Mobile AI Delivery</div>
+                                <div class="pillar-desc">FastAPI microservices, Docker, Redis caching, and cross-platform Flutter/Riverpod mobile apps shipped to App Store & Google Play.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             TECHNICAL SKILLS MATRIX
+             ========================================================================== -->
+        <section class="section-spacing" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Tech Stack</span>
+                    </div>
+                    <h2 class="section-title">Technical <span class="gradient-text">Competencies</span></h2>
+                    <p class="section-subtitle">A comprehensive toolkit spanning foundational machine learning, state-of-the-art LLMs, vector search, and cloud deployments.</p>
+                </div>
+
+                <!-- Skill Category Filter Tabs -->
+                <div class="skills-tabs">
+                    <button class="skill-tab-btn active" data-filter="all">
+                        <i class="fa-solid fa-border-all"></i>
+                        <span>All Technologies</span>
+                    </button>
+                    <button class="skill-tab-btn" data-filter="genai">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>Gen AI & LLMs</span>
+                    </button>
+                    <button class="skill-tab-btn" data-filter="mldl">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>ML, DL & Vision</span>
+                    </button>
+                    <button class="skill-tab-btn" data-filter="languages">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Languages & Frameworks</span>
+                    </button>
+                    <button class="skill-tab-btn" data-filter="cloud">
+                        <i class="fa-solid fa-server"></i>
+                        <span>Tools, DBs & Cloud</span>
+                    </button>
+                </div>
+
+                <!-- Skill Cards Grid -->
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- GenAI Card 1 -->
+                    <div class="skill-card" data-category="genai">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-solid fa-microchip"></i></div>
+                                <div>
+                                    <div class="skill-name">Large Language Models</div>
+                                    <div class="skill-badge-category">GenAI Core</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">LLaMA 3, Gemini Live, OpenAI GPT-4o, Prompt Engineering, Model Fine-Tuning & Quantization.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">LLaMA 3</span>
+                            <span class="skill-tag">Gemini Live</span>
+                            <span class="skill-tag">OpenAI</span>
+                            <span class="skill-tag">Transformers</span>
+                        </div>
+                    </div>
+
+                    <!-- GenAI Card 2 -->
+                    <div class="skill-card" data-category="genai">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-solid fa-diagram-project"></i></div>
+                                <div>
+                                    <div class="skill-name">Agentic & RAG Frameworks</div>
+                                    <div class="skill-badge-category">Autonomous Agents</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">LangChain, LangGraph multi-agent orchestration, LlamaIndex, conversational memory, tool calling.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">LangGraph</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LlamaIndex</span>
+                            <span class="skill-tag">RAG Pipelines</span>
+                        </div>
+                    </div>
+
+                    <!-- Voice AI Card -->
+                    <div class="skill-card" data-category="genai">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-solid fa-headset"></i></div>
+                                <div>
+                                    <div class="skill-name">Voice AI & Telephony</div>
+                                    <div class="skill-badge-category">Real-Time Audio</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">Deepgram ASR, ElevenLabs TTS, Twilio Voice Streams, WebSocket pipelines, barge-in interruption.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Deepgram</span>
+                            <span class="skill-tag">ElevenLabs</span>
+                            <span class="skill-tag">Twilio</span>
+                            <span class="skill-tag">WebSockets</span>
+                        </div>
+                    </div>
+
+                    <!-- ML / DL Card 1 -->
+                    <div class="skill-card" data-category="mldl">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-solid fa-atom"></i></div>
+                                <div>
+                                    <div class="skill-name">Deep Learning Frameworks</div>
+                                    <div class="skill-badge-category">Machine Learning</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">PyTorch, TensorFlow, Keras, CNNs, Convolutional Neural Networks, Transfer Learning.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">EfficientNetB0</span>
+                        </div>
+                    </div>
+
+                    <!-- Computer Vision Card -->
+                    <div class="skill-card" data-category="mldl">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-solid fa-camera"></i></div>
+                                <div>
+                                    <div class="skill-name">Computer Vision</div>
+                                    <div class="skill-badge-category">Visual Intelligence</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">OpenCV image processing, YOLOv7 real-time object detection, data augmentation, Kaggle datasets.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">YOLOv7</span>
+                            <span class="skill-tag">Data Augmentation</span>
+                        </div>
+                    </div>
+
+                    <!-- Languages Card -->
+                    <div class="skill-card" data-category="languages">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-brands fa-python"></i></div>
+                                <div>
+                                    <div class="skill-name">Core Languages</div>
+                                    <div class="skill-badge-category">Programming</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">Python (Advanced AI/Backend), Dart (Mobile), JavaScript / TypeScript, SQL.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile & Web Frameworks -->
+                    <div class="skill-card" data-category="languages">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-solid fa-mobile-screen"></i></div>
+                                <div>
+                                    <div class="skill-name">Mobile & Backend Frameworks</div>
+                                    <div class="skill-badge-category">Application Layer</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">Flutter & Riverpod for cross-platform iOS/Android, FastAPI, RESTful APIs, HTML5/CSS3.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Riverpod</span>
+                            <span class="skill-tag">FastAPI</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases & VectorDBs -->
+                    <div class="skill-card" data-category="cloud">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-solid fa-database"></i></div>
+                                <div>
+                                    <div class="skill-name">Databases & Vector Stores</div>
+                                    <div class="skill-badge-category">Storage & Caching</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">VectorDBs (Pinecone, Chroma, Qdrant), PostgreSQL, MongoDB, Redis multi-tenant caching, Firebase.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">VectorDBs</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-card" data-category="cloud">
+                        <div>
+                            <div class="skill-header">
+                                <div class="skill-icon-wrap"><i class="fa-brands fa-aws"></i></div>
+                                <div>
+                                    <div class="skill-name">Cloud & DevOps</div>
+                                    <div class="skill-badge-category">Infrastructure</div>
+                                </div>
+                            </div>
+                            <p class="pillar-desc">AWS, Google Cloud Platform, Docker containerization, Git, GitHub Actions, CI/CD.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             EXPERIENCE & EDUCATION TIMELINE
+             ========================================================================== -->
+        <section class="section-spacing" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Career Pathway</span>
+                    </div>
+                    <h2 class="section-title">Work <span class="gradient-text">Experience</span> & Education</h2>
+                    <p class="section-subtitle">Track record of building production AI agents, voice pipelines, and scalable software systems.</p>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Cloud Engineer</h3>
+                                    <div class="timeline-company">
+                                        <i class="fa-solid fa-building"></i><span>Sopra Steria</span>
+                                        <span class="skill-tag" style="margin-left: 8px;">Noida, India</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-period"><i class="fa-regular fa-calendar"></i><span>2024 – Present</span></div>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Support enterprise applications and cloud infrastructure in a production environment, investigating incidents, service requests, and application availability issues.</li>
+                                <li>Work with Linux/RHEL, AWS infrastructure, Git/GitHub, Jenkins, Bash/Shell scripting, SSL/TLS certificates, and Oracle/PostgreSQL databases as part of support and troubleshooting workflows.</li>
+                                <li>Participate in incident analysis, change activities, log review, monitoring-alert investigation, and coordination with technical teams to restore service and document findings.</li>
+                                <li>Build a foundation in reliability, troubleshooting, and production operations that complements a long-term learning path toward AI/ML engineering and cloud-based AI applications.</li>
+                            </ul>
+                            <div class="timeline-tech-stack">
+                                <span class="tech-badge">Linux / RHEL</span><span class="tech-badge">AWS</span><span class="tech-badge">Git & GitHub</span><span class="tech-badge">Jenkins</span><span class="tech-badge">Bash/Shell</span><span class="tech-badge">Oracle</span><span class="tech-badge">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Initial Training & Technical Learning</h3>
+                                    <div class="timeline-company">
+                                        <i class="fa-solid fa-laptop-code"></i><span>Sopra Steria India</span>
+                                        <span class="skill-tag" style="margin-left: 8px;">Training & Onboarding</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-period"><i class="fa-regular fa-calendar"></i><span>Nov. 2024 – Apr. 2025</span></div>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Completed structured onboarding in professional communication, corporate operations, technical email communication, and IT Service Management (ITSM) processes.</li>
+                                <li>Developed working knowledge of incident management, service requests, and enterprise support practices.</li>
+                                <li>Continuing independent learning in Python, Generative AI, Large Language Models, prompt engineering, and Machine Learning concepts, supported by hands-on practice projects.</li>
+                            </ul>
+                            <div class="timeline-tech-stack">
+                                <span class="tech-badge">Python</span><span class="tech-badge">Generative AI</span><span class="tech-badge">LLMs</span><span class="tech-badge">Machine Learning</span><span class="tech-badge">ITSM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">B.Tech in Computer Science and Engineering</h3>
+                                    <div class="timeline-company">
+                                        <i class="fa-solid fa-graduation-cap"></i><span>Galgotias College of Engineering and Technology</span>
+                                        <span class="skill-tag" style="margin-left: 8px;">Greater Noida, India</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-period"><i class="fa-regular fa-calendar"></i><span>2020 – 2024</span></div>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Built a computer science foundation through software development, programming, databases, and related engineering coursework.</li>
+                                <li>Developing specialization through independent study and projects in Generative AI, Machine Learning, and AI application development.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             FEATURED PROJECTS SHOWCASE
+             ========================================================================== -->
+        <section class="section-spacing" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>Featured Work</span>
+                    </div>
+                    <h2 class="section-title">Production AI <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Real-world AI systems engineered for scale, high precision, low latency, and delightful user experiences.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: VoxReception (Large Featured) -->
+                    <div class="project-card featured-large">
+                        <div class="project-img-wrap">
+                            <div class="project-badge">FEATURED VOICE AI</div>
+                            <img src="./voxreception.jpg" alt="VoxReception Real-Time Conversational Voice AI">
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">VoxReception — Conversational Voice AI</h3>
+                                <p class="project-desc">
+                                    A real-time voice platform orchestrating ASR-LLM-TTS pipelines over WebSockets with automatic failover, telephony integration, and barge-in interruption handling.
+                                </p>
+                                <div class="project-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>Sub-second voice latency with Deepgram + ElevenLabs</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>98.5% tool-execution success rate over 1,000+ actions</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>LangGraph multi-agent appointment & calendar scheduler</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="project-tags">
+                                    <span class="project-tag-pill">Gemini Live</span>
+                                    <span class="project-tag-pill">Deepgram</span>
+                                    <span class="project-tag-pill">ElevenLabs</span>
+                                    <span class="project-tag-pill">Twilio</span>
+                                    <span class="project-tag-pill">LangGraph</span>
+                                    <span class="project-tag-pill">WebSockets</span>
+                                    <span class="project-tag-pill">Redis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#contact" class="project-btn">
+                                        <span>Explore Architecture</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: BalletSense RAG Assistant -->
+                    <div class="project-card">
+                        <div class="project-img-wrap">
+                            <div class="project-badge">ENTERPRISE GEN AI</div>
+                            <img src="./balletsense.jpg" alt="BalletSense GenAI Knowledge Assistant">
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">BalletSense — GenAI Knowledge Assistant</h3>
+                                <p class="project-desc">
+                                    Enterprise RAG assistant using LLaMA 3 and LangChain with conversation memory, intelligent web search, and vector DB retrieval.
+                                </p>
+                                <div class="project-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>Autonomously resolved ~40% of pilot queries</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>~95% response accuracy for knowledge bases</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="project-tags">
+                                    <span class="project-tag-pill">LLaMA 3</span>
+                                    <span class="project-tag-pill">LangChain</span>
+                                    <span class="project-tag-pill">RAG</span>
+                                    <span class="project-tag-pill">VectorDB</span>
+                                    <span class="project-tag-pill">Web Search</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#contact" class="project-btn">
+                                        <span>View Case Study</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: PBT Mobile & Multilingual LLM -->
+                    <div class="project-card">
+                        <div class="project-img-wrap">
+                            <div class="project-badge">MOBILE & LLM</div>
+                            <img src="./mobile_poco.jpg" alt="PBT Mobile Application with Multilingual LLM">
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">PBT — Mobile App & LLM Translation</h3>
+                                <p class="project-desc">
+                                    Cross-platform Flutter application with 20+ screens, audio/video modules, casting APIs, and domain-glossary injected multilingual LLM translation.
+                                </p>
+                                <div class="project-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>4,250+ active users across App Store & Google Play</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>Domain glossary injection for precise translations</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="project-tags">
+                                    <span class="project-tag-pill">Flutter</span>
+                                    <span class="project-tag-pill">Riverpod</span>
+                                    <span class="project-tag-pill">LLM Translation</span>
+                                    <span class="project-tag-pill">iOS & Android</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#contact" class="project-btn">
+                                        <span>View Details</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Plant Disease Classifier -->
+                    <div class="project-card">
+                        <div class="project-img-wrap">
+                            <div class="project-badge">COMPUTER VISION</div>
+                            <img src="./leaf-green.jpg" alt="Plant Disease Classification System">
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">Plant Disease Classifier (CNN)</h3>
+                                <p class="project-desc">
+                                    Diagnostic computer vision system trained on Kaggle PlantVillage (50,000+ images) utilizing EfficientNetB0 for real-time leaf disease classification.
+                                </p>
+                                <div class="project-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>97% validation accuracy with EfficientNetB0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="project-tags">
+                                    <span class="project-tag-pill">TensorFlow</span>
+                                    <span class="project-tag-pill">EfficientNetB0</span>
+                                    <span class="project-tag-pill">CNN</span>
+                                    <span class="project-tag-pill">Kaggle</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Vaishnav129f" target="_blank" class="project-btn">
+                                        <span>GitHub Repo</span>
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Helmet & PPE Detection -->
+                    <div class="project-card">
+                        <div class="project-img-wrap">
+                            <div class="project-badge">REAL-TIME CV</div>
+                            <img src="./helmet.jpeg" alt="Helmet and PPE Detection">
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">Safety Helmet & PPE Detection</h3>
+                                <p class="project-desc">
+                                    Real-time safety compliance monitoring system using YOLOv7 and OpenCV for automated worker protection in industrial and construction environments.
+                                </p>
+                                <div class="project-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>High-FPS detection for edge devices and video feeds</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="project-tags">
+                                    <span class="project-tag-pill">YOLOv7</span>
+                                    <span class="project-tag-pill">OpenCV</span>
+                                    <span class="project-tag-pill">PyTorch</span>
+                                    <span class="project-tag-pill">Edge AI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Vaishnav129f" target="_blank" class="project-btn">
+                                        <span>GitHub Repo</span>
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CONTACT SECTION
+             ========================================================================== -->
+        <section class="section-spacing" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Get In Touch</span>
+                    </div>
+                    <h2 class="section-title">Let's Build Something <span class="gradient-text">Intelligent</span></h2>
+                    <p class="section-subtitle">Whether you're looking for a GenAI & ML Engineer, an AI/ML Engineer, or want to discuss conversational voice systems, feel free to reach out!</p>
+                </div>
+
+
+<div class="contact-grid">
+    <!-- Contact Cards -->
+    <div class="contact-info-cards">
+
+        <!-- Email Card -->
+        <div class="contact-card">
+            <div class="contact-card-left">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                    <div class="contact-type">Email</div>
+                    <a href="mailto:vaishnavsrivastavamzp@gmail.com"
+                       class="contact-value"
+                       id="emailVal">
+                        vaishnavsrivastavamzp@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <button class="copy-btn"
+                    data-copy="vaishnavsrivastavamzp@gmail.com"
+                    title="Copy email address">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+                        <!-- Phone Card -->
+                       
+<div class="contact-card">
+    <div class="contact-card-left">
+        <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+            <div class="contact-type">Phone</div>
+            <a href="tel:+916393407978"
+               class="contact-value"
+               id="phoneVal">
+                +91 63934 07978
+            </a>
+        </div>
+    </div>
+
+    <button class="copy-btn"
+            data-copy="+91 63934 07978"
+            title="Copy phone number">
+        <i class="fa-regular fa-copy"></i>
+        <span>Copy</span>
+    </button>
+</div>
+
+
+                        <!-- Location Card -->
+                        <div class="contact-card">
+                            <div class="contact-card-left">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <div class="contact-type">Location</div>
+                                    <div class="contact-value">Noida / Greater Noida, India</div>
+                                </div>
+                            </div>
+                            <span class="skill-tag" style="color: var(--accent-emerald);">Open to Relocation / Remote</span>
+                        </div>
+
+                  
+<!-- LinkedIn & GitHub Cards -->
+<div class="contact-card">
+    <div class="contact-card-left">
+        <div class="contact-icon">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+        <div>
+            <div class="contact-type">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/vaishnav-srivastava-4662a1218/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-value">
+                https://www.linkedin.com/in/vaishnav-srivastava-4662a1218/
+            </a>
+        </div>
+    </div>
+
+    <a href="https://www.linkedin.com/in/vaishnav-srivastava-4662a1218/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Visit LinkedIn profile">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+</div>
+
+                    </div>
+
+                    <!-- Interactive Contact Message Form -->
+                    <div class="contact-form-card">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="formName" class="form-label">Your Name</label>
+                                <input type="text" id="formName" class="form-input" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail" class="form-label">Your Email</label>
+                                <input type="email" id="formEmail" class="form-input" placeholder="e.g. john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formSubject" class="form-label">Subject</label>
+                                <input type="text" id="formSubject" class="form-input" placeholder="Gen AI Project / Job Opportunity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formMessage" class="form-label">Message</label>
+                                <textarea id="formMessage" class="form-textarea" placeholder="Describe your project, team, or opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit-btn" id="submitBtn">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notification Element -->
+    <div class="toast-msg" id="toastMsg">
+        <i class="fa-solid fa-circle-check" style="color: var(--accent-cyan);"></i>
+        <span id="toastText">Copied to clipboard!</span>
+    </div>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo-link">
+                    <div class="logo-symbol">V</div>
+                    <div class="logo-text">Vaishnav Srivastava</div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vaishnav Srivastava. Focused on Generative AI, Machine Learning, and intelligent applications.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
